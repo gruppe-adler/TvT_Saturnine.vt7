@@ -3,8 +3,8 @@
 */
 
 [{
-    _firstActiveSectorID = selectRandom [2,3];
-    _roundLength = 1800;
+    _firstActiveSectorID = selectRandom [6,7];
+    _roundLength = 2100;
     _opforDirection = -1;
 
     _dateAndTimeArray = [
