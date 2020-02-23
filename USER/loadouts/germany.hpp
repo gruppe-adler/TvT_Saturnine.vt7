@@ -4,7 +4,7 @@ class germany {
         backpack = "";
         vest[] = {"rhssaf_vest_md99_woodland","rhssaf_vest_md99_woodland_rifleman","rhssaf_vest_md99_woodland_radio","rhssaf_vest_md99_woodland_rifleman_radio","rhssaf_vest_md99_md2camo_rifleman_radio","rhssaf_vest_md98_md2camo","rhssaf_vest_md98_rifleman","rhssaf_vest_otv_md2camo"};
         primaryWeapon = "rhs_weap_ak74m";
-        primaryWeaponMagazine = "rhs_30Rnd_545x39_AK_plum_green";
+        primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
         primaryWeaponMuzzle = "";
         primaryWeaponOptics[] = {
             "rhs_acc_pkas",
@@ -37,13 +37,14 @@ class germany {
         gps = "ItemGPS";
         compass = "ItemCompass";
         watch = "ItemWatch";
-        radio = "TFAR_fadak";
+        radio = "TFAR_anprc152";
 
         addItemsToUniform[] = {
             LIST_6("ACE_fieldDressing"),
             LIST_2("ACE_morphine"),
             LIST_2("ACE_Chemlight_HiWhite"),
             LIST_2("rhs_mag_rdg2_white"),
+            LIST_4("ACE_splint"),
             "ACE_epinephrine",
             "ACE_Flashlight_KSF1",
             "ACE_MapTools"
@@ -54,7 +55,7 @@ class germany {
         // Rifleman
         class Soldier_F {
             addItemsToVest[] = {
-                LIST_9("rhs_30Rnd_545x39_AK_plum_green"),
+                LIST_8("rhs_30Rnd_545x39_7N22_plum_AK"),
                 LIST_2("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white"),
                 "ACE_EntrenchingTool"
