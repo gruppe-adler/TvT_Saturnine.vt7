@@ -15,6 +15,7 @@ customGear = 300;                                                               
                                                                                 // Zahl - Zeit in Sekunden nach Spielstart, in der Anpassung erlaubt ist.
 
 customGearAllowedCategories[] = {                                               // Legt fest, welche Ausrüstungs-Kategorien von den Spielern angepasst werden dürfen. 
+    "primaryWeapon",
     "vest",
     "primaryWeaponOptics",
     "primaryWeaponMagazine"

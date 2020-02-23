@@ -2,8 +2,8 @@ class russia {
     class AllUnits {
         uniform = "rhs_uniform_flora_patchless_alt";
         backpack = "";
-        vest[] = {"rhs_6b27m", "rhs_6b23_ML_6sh92", "rhs_6b23_6sh92_vog", "rhs_6b23_rifleman", "rhs_6b27m_green"};
-        primaryWeapon = "rhs_weap_ak74m";
+        vest[] = {"rhs_6b23_ML_6sh92", "rhs_6b23_6sh92_vog", "rhs_6b23_rifleman"};
+        primaryWeapon[] = {"rhs_weap_ak74m", "rhs_weap_ak74_2", "rhs_weap_ak74m_gp25", "rhs_weap_m84"};
         primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
         primaryWeaponMuzzle = "";
         primaryWeaponOptics[] = {
@@ -12,7 +12,7 @@ class russia {
             "rhs_acc_1p63",
             "rhs_acc_ekp1"
         };
-        primaryWeaponPointer = "";
+        primaryWeaponPointer = "rhs_acc_2dpZenit";
         primaryWeaponUnderbarrel = "";
         primaryWeaponUnderbarrelMagazine = "";
         secondaryWeapon = "";
@@ -65,6 +65,7 @@ class russia {
         // Grenadier
         class Soldier_GL_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_gp25";
+            primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
             backpack = "rhs_sidor";
             addItemsToBackpack[] = {
                 LIST_6("rhs_GRD40_White")
@@ -79,6 +80,7 @@ class russia {
         // TL
         class Soldier_TL_F: Soldier_F {
             primaryWeapon = "rhs_weap_ak74m_gp25";
+            primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
             handgunWeapon = "rhs_weap_tr8";
             headgear = "rhs_6b27m_green_ess";
             backpack = "rhs_sidor";
@@ -102,18 +104,18 @@ class russia {
 
         //autorifleman
         class Soldier_AR_F: Soldier_F {
-            primaryWeapon = "rhs_weap_ak103";
-            primaryWeaponMagazine = "rhs_75Rnd_762x39mm_tracer";
+            primaryWeapon = "rhs_weap_m84";
+            primaryWeaponMagazine = "rhs_100Rnd_762x54mmR_green";
             primaryWeaponMuzzle = "rhs_acc_dtk3";
             primaryWeaponOptics = "";
             backpack = "rhs_assault_umbts";
             addItemsToVest[] = {
-                LIST_2("rhs_75Rnd_762x39mm_tracer"),
+                LIST_2("rhs_100Rnd_762x54mmR_green"),
 				LIST_2("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white"),
 			};
             addItemsToBackpack[] = {
-                LIST_4("rhs_75Rnd_762x39mm_tracer")
+                LIST_4("rhs_100Rnd_762x54mmR_green")
             };
         };
 
@@ -121,7 +123,7 @@ class russia {
         class Soldier_AAR_F: Soldier_F {
             backpack = "rhs_assault_umbts";
             addItemsToBackpack[] = {
-                LIST_4("rhs_75Rnd_762x39mm_tracer")
+                LIST_4("rhs_100Rnd_762x54mmR_green")
             };
         };
     };
