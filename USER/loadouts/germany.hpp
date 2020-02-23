@@ -29,7 +29,7 @@ class germany {
         handgunWeaponPointer = "";
         handgunWeaponUnderbarrel = "";
         handgunWeaponUnderbarrelMagazine = "";
-        headgear = "rhs_6b27m_green";
+        headgear = "rhssaf_helmet_m97_olive_nocamo";
         goggles = "";
         nvgoggles = "";
         binoculars = "Binocular";
@@ -82,7 +82,6 @@ class germany {
             primaryWeapon = "rhs_weap_ak74m_gp25";
             primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
             handgunWeapon = "rhs_weap_tr8";
-            headgear = "rhs_6b27m_green_ess";
             backpack = "rhssaf_kitbag_md2camo";
             addItemsToBackpack[] = {
                 LIST_6("rhs_GRD40_White"),

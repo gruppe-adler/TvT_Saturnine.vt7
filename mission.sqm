@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=206;
+		nextID=212;
 	};
 	class Camera
 	{
-		pos[]={1114.0592,17.94982,2925.8154};
-		dir[]={0.4734672,-0.5378195,-0.69756609};
-		up[]={0.30204555,0.84305483,-0.44500893};
-		aside[]={-0.82742018,-1.922599e-007,-0.56160378};
+		pos[]={1036.4365,38.238003,2835.0007};
+		dir[]={-0.85353792,-0.41758174,0.31166807};
+		up[]={-0.39227182,0.90862668,0.14323632};
+		aside[]={0.3430028,8.0093741e-008,0.93935502};
 	};
 };
 binarizationWanted=0;
@@ -159,7 +159,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -3597,7 +3597,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=216;
+		items=215;
 		class Item0
 		{
 			dataType="Layer";
@@ -4911,13 +4911,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1045.3434,16.817963,2801.3171};
+				position[]={1045.343,16.818001,2801.3169};
 				angles[]={0,0.44303438,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1345;
 			type="Logic";
-			atlOffset=3.6579628;
+			atlOffset=3.6580009;
 		};
 		class Item25
 		{
@@ -4927,7 +4927,7 @@ class Mission
 				position[]={2387.3179,15.621265,6926.1157};
 				angles[]={0.10203311,0,6.201457};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1346;
 			type="Logic";
 			atlOffset=0.42807198;
@@ -4940,7 +4940,7 @@ class Mission
 				position[]={2213.8354,31.920494,7101.8203};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1347;
 			type="Logic";
 			atlOffset=24.353861;
@@ -4953,7 +4953,7 @@ class Mission
 				position[]={602.75464,13.198798,5237.2593};
 				angles[]={0,1.8246893,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1353;
 			type="Logic";
 			atlOffset=11.001709;
@@ -4966,7 +4966,7 @@ class Mission
 				position[]={2365.3438,17.89913,6900.0449};
 				angles[]={0.081728555,0.47773153,6.2718072};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1360;
 			type="Logic";
 			atlOffset=1.9073486e-006;
@@ -4979,7 +4979,7 @@ class Mission
 				position[]={2279.7495,16.382421,7062.9189};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1361;
 			type="Logic";
 			atlOffset=8.4507656;
@@ -4992,7 +4992,7 @@ class Mission
 				position[]={610.18726,12.97613,5336.1548};
 				angles[]={0,0.47773153,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1375;
 			type="Logic";
 			atlOffset=10.70245;
@@ -5005,7 +5005,7 @@ class Mission
 				position[]={15493.223,11.929401,16672.563};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=1377;
 			type="Logic";
 			atlOffset=3.3394012;
@@ -5320,7 +5320,7 @@ class Mission
 					};
 					id=2410;
 					type="B_officer_F";
-					atlOffset=0.42099857;
+					atlOffset=0.42099953;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5901,7 +5901,7 @@ class Mission
 			{
 			};
 			id=1477;
-			atlOffset=0.42099857;
+			atlOffset=0.42099953;
 		};
 		class Item35
 		{
@@ -6140,7 +6140,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={969.16461,15.578242,2871.533};
+						position[]={968.60596,15.578242,2872.0789};
 						angles[]={0,2.4991317,0};
 					};
 					side="Empty";
@@ -12016,22 +12016,23 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={980.79926,15.53659,2855.8647};
-						angles[]={0,2.4935324,0};
+						position[]={980.41101,15.537057,2855.5129};
+						angles[]={0,2.4935346,0};
 					};
 					side="Empty";
 					class Attributes
 					{
+						textures="Camo";
 					};
 					id=2788;
 					type="rhssaf_army_ural";
-					atlOffset=0.46653271;
+					atlOffset=0.46700001;
 					class CustomAttributes
 					{
 						class Attribute0
 						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							property="rhs_decalNumber_type";
+							expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cDecals4CarsNumberPlaces, _value]]] call rhs_fnc_decalsInit";
 							class Value
 							{
 								class data
@@ -12043,7 +12044,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+									value="Default";
 								};
 							};
 						};
@@ -12183,7 +12184,102 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="rhs_decalPlatoon_type";
+							expression="_this setVariable ['rhs_decalPlatoon_type', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Army";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="rhs_decalArmy_type";
+							expression="_this setVariable ['rhs_decalArmy_type', _value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Army";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="rhs_decalArmy";
+							expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cDecalsCarsRightArmyPlaces,  _this getVariable ['rhs_decalArmy_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="-1";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="rhs_decalPlatoon";
+							expression="if(parseNumber _value >= 0)then{ [_this, [ [ 'Label', cDecalsCarsRightPlatoonPlaces,  _this getVariable ['rhs_decalPlatoon_type','Army'],call compile _value] ] ] call rhs_fnc_decalsInit};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="-1";
+								};
+							};
+						};
+						nAttributes=7;
 					};
 				};
 				class Item33
@@ -21689,7 +21785,7 @@ class Mission
 					};
 					id=2477;
 					type="B_Soldier_F";
-					atlOffset=0.39203358;
+					atlOffset=0.39203453;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22874,7 +22970,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3680.4138,29.573204,6963.9224};
-			angle=0.9912765;
+			angle=0.99127638;
 			class Attributes
 			{
 				sizeA=10;
@@ -22917,7 +23013,7 @@ class Mission
 				position[]={3772.8894,14.984151,6847.9526};
 				angles[]={0.10203311,0,6.201457};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2585;
 			type="Logic";
 			atlOffset=0.42807198;
@@ -22930,7 +23026,7 @@ class Mission
 				position[]={3599.407,32.453583,7023.6572};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2586;
 			type="Logic";
 			atlOffset=24.353859;
@@ -22943,7 +23039,7 @@ class Mission
 				position[]={3750.9153,13.764058,6821.8818};
 				angles[]={0.081728555,0.47773153,6.2718072};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2587;
 			type="Logic";
 			atlOffset=1.9073486e-006;
@@ -22956,7 +23052,7 @@ class Mission
 				position[]={3665.321,19.203236,6984.7559};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2588;
 			type="Logic";
 			atlOffset=8.4507666;
@@ -23263,7 +23359,7 @@ class Mission
 				position[]={5589.9863,9.849432,7398.1499};
 				angles[]={0.10203311,0,6.201457};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2609;
 			type="Logic";
 			atlOffset=0.42807198;
@@ -23276,7 +23372,7 @@ class Mission
 				position[]={5416.5039,37.088081,7573.8545};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2610;
 			type="Logic";
 			atlOffset=24.353861;
@@ -23289,7 +23385,7 @@ class Mission
 				position[]={5568.0122,10.186957,7372.0791};
 				angles[]={0.081728555,0.47773153,6.2718072};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2611;
 			type="Logic";
 			atlOffset=1.9073486e-006;
@@ -23302,7 +23398,7 @@ class Mission
 				position[]={5482.418,19.194687,7534.9531};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2612;
 			type="Logic";
 			atlOffset=8.4507675;
@@ -23611,7 +23707,7 @@ class Mission
 				position[]={5165.3125,26.644405,9939.332};
 				angles[]={0.10203311,0,6.201457};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2628;
 			type="Logic";
 			atlOffset=0.42807198;
@@ -23624,7 +23720,7 @@ class Mission
 				position[]={4991.8301,61.032303,10115.036};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2629;
 			type="Logic";
 			atlOffset=24.353859;
@@ -23637,7 +23733,7 @@ class Mission
 				position[]={5143.3384,24.421492,9913.2607};
 				angles[]={0.081728555,0.47773153,6.2718072};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2630;
 			type="Logic";
 			atlOffset=1.9073486e-006;
@@ -23650,7 +23746,7 @@ class Mission
 				position[]={5057.7441,39.960876,10076.135};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2631;
 			type="Logic";
 			atlOffset=8.4507694;
@@ -23959,7 +24055,7 @@ class Mission
 				position[]={7623.4243,21.592758,10925.494};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2647;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -23972,7 +24068,7 @@ class Mission
 				position[]={7449.9419,42.051392,11101.198};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2648;
 			type="Logic";
 			atlOffset=24.353651;
@@ -23985,7 +24081,7 @@ class Mission
 				position[]={7601.4502,25.819971,10899.423};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2649;
 			type="Logic";
 		};
@@ -23997,7 +24093,7 @@ class Mission
 				position[]={7515.856,28.89888,11062.297};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2650;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -24226,7 +24322,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9520.0254,20.860001,10894.402};
-			angle=3.9445536;
+			angle=3.9445524;
 			class Attributes
 			{
 				sizeA=30;
@@ -24295,7 +24391,7 @@ class Mission
 				position[]={9500.7383,20.581942,10851.805};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2666;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -24308,7 +24404,7 @@ class Mission
 				position[]={9327.2559,48.473763,11027.509};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2667;
 			type="Logic";
 			atlOffset=24.353653;
@@ -24321,7 +24417,7 @@ class Mission
 				position[]={9478.7637,18.927063,10825.733};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2668;
 			type="Logic";
 		};
@@ -24333,7 +24429,7 @@ class Mission
 				position[]={9393.1699,30.817286,10988.607};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2669;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -24644,7 +24740,7 @@ class Mission
 				position[]={10813.328,41.514332,13043.212};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2686;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -24657,7 +24753,7 @@ class Mission
 				position[]={10639.846,66.468575,13218.916};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2687;
 			type="Logic";
 			atlOffset=24.353653;
@@ -24670,7 +24766,7 @@ class Mission
 				position[]={10791.354,41.167717,13017.141};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2688;
 			type="Logic";
 		};
@@ -24682,7 +24778,7 @@ class Mission
 				position[]={10705.76,49.439068,13180.015};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2689;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -24992,7 +25088,7 @@ class Mission
 				position[]={13950.742,11.302338,11466.703};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2705;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -25005,7 +25101,7 @@ class Mission
 				position[]={13913.994,37.291382,11632.28};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2706;
 			type="Logic";
 			atlOffset=24.353777;
@@ -25018,7 +25114,7 @@ class Mission
 				position[]={13928.768,10.782305,11440.632};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2707;
 			type="Logic";
 		};
@@ -25030,7 +25126,7 @@ class Mission
 				position[]={13843.174,26.08609,11603.506};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2708;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -25339,7 +25435,7 @@ class Mission
 				position[]={15356.628,1.8605936,13200.032};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2724;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -25352,7 +25448,7 @@ class Mission
 				position[]={15319.88,25.498045,13365.609};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2725;
 			type="Logic";
 			atlOffset=24.353777;
@@ -25365,7 +25461,7 @@ class Mission
 				position[]={15334.653,2.3621874,13173.961};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2726;
 			type="Logic";
 		};
@@ -25377,7 +25473,7 @@ class Mission
 				position[]={15249.06,17.271482,13336.835};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2727;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -25684,7 +25780,7 @@ class Mission
 				position[]={14086.095,8.4382038,15047.027};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2743;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -25697,7 +25793,7 @@ class Mission
 				position[]={14049.347,35.574123,15212.604};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2744;
 			type="Logic";
 			atlOffset=24.353783;
@@ -25710,7 +25806,7 @@ class Mission
 				position[]={14064.12,5.6782718,15020.956};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2745;
 			type="Logic";
 		};
@@ -25722,7 +25818,7 @@ class Mission
 				position[]={13978.526,20.700201,15183.83};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2746;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -26019,7 +26115,7 @@ class Mission
 				position[]={16711.484,7.2477274,15542.54};
 				angles[]={0.011372928,0,6.2309017};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2762;
 			type="Logic";
 			atlOffset=0.42786407;
@@ -26032,7 +26128,7 @@ class Mission
 				position[]={16674.736,32.522034,15708.117};
 				angles[]={0,0.094385624,0};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2763;
 			type="Logic";
 			atlOffset=24.353775;
@@ -26045,7 +26141,7 @@ class Mission
 				position[]={16689.51,6.6606226,15516.469};
 				angles[]={0.052285124,0.47773153,6.1519752};
 			};
-			init="call{[this,EAST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2764;
 			type="Logic";
 		};
@@ -26057,7 +26153,7 @@ class Mission
 				position[]={16603.916,15.843511,15679.343};
 				angles[]={0,2.0526991,0};
 			};
-			init="call{[this,WEST,""ATTACK""] call grad_linearsd_fnc_addVehicles;}";
+			init="call{[this,WEST,""ATTACK"", ""[this, true] execVM 'USER\addSmokeMagazine.sqf';""] call grad_linearsd_fnc_addVehicles;}";
 			id=2765;
 			type="Logic";
 			atlOffset=8.4505615;
@@ -31464,188 +31560,16 @@ class Mission
 			};
 			id=2885;
 		};
-		class Item215
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1125.4471,15.5187,2924.0435};
-				angles[]={-0,4.1184292,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=2888;
-			type="rhs_prp3_vv";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="crate_l3_unhide";
-					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="crate_r3_unhide";
-					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="wood_2_unhide";
-					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="crate_l2_unhide";
-					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="crate_r2_unhide";
-					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="wood_1_unhide";
-					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="crate_l1_unhide";
-					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="crate_r1_unhide";
-					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=8;
-			};
-		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=210;
+			nextID=211;
 		};
 		class Links
 		{
-			items=210;
+			items=211;
 			class Item0
 			{
 				linkID=0;
@@ -33741,6 +33665,16 @@ class Mission
 				linkID=209;
 				item0=2852;
 				item1=2764;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item210
+			{
+				linkID=210;
+				item0=1345;
+				item1=2788;
 				class CustomData
 				{
 					type="Sync";

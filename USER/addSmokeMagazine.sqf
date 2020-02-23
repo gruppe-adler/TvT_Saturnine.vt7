@@ -2,10 +2,12 @@ params ["_vehicle", ["_isGerman", false]];
 
 if (!isServer) exitWith {}; // safecheck
 
+
+
 if (typeOf _vehicle == "rhs_prp3_vv") then {
     _vehicle addWeaponTurret ["mortar_82mm", [2];
     _vehicle addMagazineTurret ["8Rnd_82mm_Mo_Smoke_white", [2]];
-
+    // prp 3 tweaks
     if (_isGerman) then {
         [
             _vehicle,
@@ -14,9 +16,12 @@ if (typeOf _vehicle == "rhs_prp3_vv") then {
         ] call BIS_fnc_initVehicle;
     };
 } else {
-    [
-    _vehicle,
-        ["Camo2",1], 
-        ["people_tag_hide",1,"spare_hide",0,"bench_hide",0,"rear_numplate_hide",1,"light_hide",1]
-    ] call BIS_fnc_initVehicle;
+    // ural
+    if (_isGerman) then {
+        [
+        _vehicle,
+            ["Camo2",1], 
+            ["people_tag_hide",1,"spare_hide",0,"bench_hide",0,"rear_numplate_hide",1,"light_hide",1]
+        ] call BIS_fnc_initVehicle;
+    };
 };
