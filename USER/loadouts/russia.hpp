@@ -127,7 +127,7 @@ class russia {
 
 	class Rank {
 		class LIEUTENANT {
-            headgear = "rhs_fieldcap_ml";
+            addItemsToBackpack[] = {"rhs_fieldcap_ml"};
 		};
 	};
 };

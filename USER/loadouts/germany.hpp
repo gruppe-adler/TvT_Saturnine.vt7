@@ -1,16 +1,16 @@
 class germany {
-    class AllUnits {
-        uniform = "SMM_Uniform_BW_FT";
+   class AllUnits {
+        uniform = "rhssaf_uniform_m93_oakleaf";
         backpack = "";
-        vest = "SMM_Vest_BW_FT";
-        primaryWeapon = "rhs_weap_g36kv";
-        primaryWeaponMagazine = "rhssaf_30rnd_556x45_Tracers_G36";
+        vest[] = {"rhssaf_vest_md99_woodland","rhssaf_vest_md99_woodland_rifleman","rhssaf_vest_md99_woodland_radio","rhssaf_vest_md99_woodland_rifleman_radio","rhssaf_vest_md99_md2camo_rifleman_radio","rhssaf_vest_md98_md2camo","rhssaf_vest_md98_rifleman","rhssaf_vest_otv_md2camo"};
+        primaryWeapon = "rhs_weap_ak74m";
+        primaryWeaponMagazine = "rhs_30Rnd_545x39_AK_plum_green";
         primaryWeaponMuzzle = "";
         primaryWeaponOptics[] = {
-            "rhsusf_acc_RX01",
-            "rhsusf_acc_compm4",
-            "rhsusf_acc_T1_high",
-            "rhs_acc_1p87"
+            "rhs_acc_pkas",
+            "rhs_acc_ekp8_02",
+            "rhs_acc_1p63",
+            "rhs_acc_ekp1"
         };
         primaryWeaponPointer = "";
         primaryWeaponUnderbarrel = "";
@@ -29,7 +29,7 @@ class germany {
         handgunWeaponPointer = "";
         handgunWeaponUnderbarrel = "";
         handgunWeaponUnderbarrelMagazine = "";
-        headgear = "SMM_Helmet_A_BW_FT";
+        headgear = "rhs_6b27m_green";
         goggles = "";
         nvgoggles = "";
         binoculars = "Binocular";
@@ -37,15 +37,16 @@ class germany {
         gps = "ItemGPS";
         compass = "ItemCompass";
         watch = "ItemWatch";
-        radio = "TFAR_anprc152";
+        radio = "TFAR_fadak";
 
         addItemsToUniform[] = {
             LIST_6("ACE_fieldDressing"),
-			LIST_2("ACE_morphine"),
+            LIST_2("ACE_morphine"),
             LIST_2("ACE_Chemlight_HiWhite"),
-			"ACE_epinephrine",
-			"ACE_Flashlight_MX991",
-			"ACE_MapTools"
+            LIST_2("rhs_mag_rdg2_white"),
+            "ACE_epinephrine",
+            "ACE_Flashlight_KSF1",
+            "ACE_MapTools"
         };
     };
 
@@ -53,41 +54,37 @@ class germany {
         // Rifleman
         class Soldier_F {
             addItemsToVest[] = {
-				LIST_9("rhssaf_30rnd_556x45_Tracers_G36"),
-				LIST_2("HandGrenade"),
-				LIST_1("SmokeShell"),
+                LIST_9("rhs_30Rnd_545x39_AK_plum_green"),
+                LIST_2("rhs_mag_rgd5"),
+                LIST_1("rhs_mag_rdg2_white"),
                 "ACE_EntrenchingTool"
-			};
+            };
         };
 
         // Grenadier
         class Soldier_GL_F: Soldier_F {
-            primaryWeapon = "rhs_weap_g36kv_ag36";
-            addItemsToVest[] = {
-				LIST_8("rhssaf_30rnd_556x45_Tracers_G36"),
-				LIST_2("HandGrenade"),
-				LIST_2("SmokeShell"),
-                LIST_6("1Rnd_Smoke_Grenade_shell")
-			};
+            primaryWeapon = "rhs_weap_ak74m_gp25";
+            backpack = "rhssaf_kitbag_md2camo";
+            addItemsToBackpack[] = {
+                LIST_6("rhs_GRD40_White")
+            };
         };
 
         // Light AT
         class Soldier_LAT_F: Soldier_F {
-            secondaryWeapon = "rhs_weap_m72a7";
+            secondaryWeapon = "rhs_weap_rpg26";
         };
 
         // TL
         class Soldier_TL_F: Soldier_F {
-            uniform  = "SMM_Uniform_BW_FT_RS";
-            primaryWeapon = "rhs_weap_g36kv_ag36";
+            primaryWeapon = "rhs_weap_ak74m_gp25";
             handgunWeapon = "rhs_weap_tr8";
-            addItemsToVest[] = {
-                LIST_8("rhssaf_30rnd_556x45_Tracers_G36"),
-                LIST_2("HandGrenade"),
-                LIST_2("SmokeShell"),
-                LIST_4("1Rnd_Smoke_Grenade_shell"),
-                LIST_1("1Rnd_SmokeRed_Grenade_shell"),
-                LIST_1("1Rnd_SmokeBlue_Grenade_shell"),
+            headgear = "rhs_6b27m_green_ess";
+            backpack = "rhssaf_kitbag_md2camo";
+            addItemsToBackpack[] = {
+                LIST_6("rhs_GRD40_White"),
+                LIST_2("rhs_GRD40_Red"),
+                LIST_2("rhs_GRD40_Green"),
                 LIST_1("grad_axe")
             };
         };
@@ -97,38 +94,40 @@ class germany {
 
         };
 
-         // SQL
+        // SQL
         class officer_F: Soldier_TL_F {
 
         };
 
         //autorifleman
         class Soldier_AR_F: Soldier_F {
-            primaryWeapon = "rhs_weap_minimi_para_railed";
-            primaryWeaponMagazine = "200Rnd_556x45_Box_Tracer_Red_F";
+            primaryWeapon = "rhs_weap_ak103";
+            primaryWeaponMagazine = "rhs_75Rnd_762x39mm_tracer";
+            primaryWeaponMuzzle = "rhs_acc_dtk3";
             primaryWeaponOptics = "";
-            backpack = "SMM_AssaultPack_BW_FT";
+            backpack = "rhssaf_kitbag_md2camo";
             addItemsToVest[] = {
-				LIST_2("HandGrenade"),
-				LIST_2("SmokeShell")
-			};
+                LIST_2("rhs_75Rnd_762x39mm_tracer"),
+                LIST_2("rhs_mag_rgd5"),
+                LIST_1("rhs_mag_rdg2_white"),
+            };
             addItemsToBackpack[] = {
-                LIST_4("200Rnd_556x45_Box_Tracer_Red_F")
+                LIST_4("rhs_75Rnd_762x39mm_tracer")
             };
         };
 
         //assistant autorifleman
         class Soldier_AAR_F: Soldier_F {
-            backpack = "SMM_AssaultPack_BW_FT";
+            backpack = "rhssaf_kitbag_md2camo";
             addItemsToBackpack[] = {
-                LIST_3("200Rnd_556x45_Box_Tracer_Red_F")
+                LIST_4("rhs_75Rnd_762x39mm_tracer")
             };
         };
     };
 
-	class Rank {
-		class LIEUTENANT {
-            headgear = "SMM_MilCap_BW_FT";
-		};
-	};
+    class Rank {
+        class LIEUTENANT {
+            addItemsToBackpack[] = {"grad_beret_black"};
+        };
+    };
 };
