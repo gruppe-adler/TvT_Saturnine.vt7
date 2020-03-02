@@ -1,5 +1,5 @@
 enableSaving [false, false];
-enableEngineArtillery false;
+enableEngineArtillery true;
 
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 

@@ -7,6 +7,7 @@ if (!isServer) exitWith {}; // safecheck
 if (typeOf _vehicle == "rhs_prp3_vv") then {
     _vehicle addWeaponTurret ["mortar_82mm", [2]];
     _vehicle addMagazineTurret ["8Rnd_82mm_Mo_Smoke_white", [2]];
+
     // prp 3 tweaks
     if (_isGerman) then {
         [
