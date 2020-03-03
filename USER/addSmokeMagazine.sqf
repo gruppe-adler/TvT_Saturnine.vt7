@@ -26,3 +26,17 @@ if (typeOf _vehicle == "rhs_prp3_vv") then {
         ] call BIS_fnc_initVehicle;
     };
 };
+
+
+if (typeOf _vehicle == "rhsgref_nat_uaz_dshkm") then {
+    // nothing
+} else {
+    // ural
+    if (_isGerman) then {
+        [
+        _vehicle,
+            ["Camo2",1], 
+            ["people_tag_hide",1,"spare_hide",0,"bench_hide",0,"rear_numplate_hide",1,"light_hide",1]
+        ] call BIS_fnc_initVehicle;
+    };
+};

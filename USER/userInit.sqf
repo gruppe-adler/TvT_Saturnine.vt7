@@ -3,7 +3,7 @@
 */
 
 [{
-    _firstActiveSectorID = selectRandom [6,7];
+    _firstActiveSectorID = selectRandom [5,6];
     _roundLength = 2100;
     _opforDirection = -1;
 
