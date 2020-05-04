@@ -2,7 +2,7 @@ class russia {
     class AllUnits {
         uniform = "rhs_uniform_flora_patchless_alt";
         backpack = "";
-        vest[] = {"rhs_6b13_Flora"};
+        vest[] = {"rhs_6b13_Flora_6sh92"};
         primaryWeapon[] = {"rhs_weap_ak74m"};
         primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
         primaryWeaponMuzzle = "";
@@ -110,11 +110,10 @@ class russia {
             backpack = "rhs_assault_umbts";
             addItemsToVest[] = {
                 LIST_2("rhs_100Rnd_762x54mmR_green"),
-				LIST_2("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white"),
 			};
             addItemsToBackpack[] = {
-                LIST_4("rhs_100Rnd_762x54mmR_green")
+                LIST_3("rhs_100Rnd_762x54mmR_green")
             };
         };
 

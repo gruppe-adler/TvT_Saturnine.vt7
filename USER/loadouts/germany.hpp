@@ -68,7 +68,7 @@ class germany {
             primaryWeaponMagazine = "rhssaf_30rnd_556x45_SOST_G36";
             backpack = "B_Kitbag_rgr";
             addItemsToBackpack[] = {
-                LIST_6("rhs_GRD40_White")
+                LIST_6("rhs_mag_m714_White")
             };
         };
 
@@ -84,9 +84,9 @@ class germany {
             handgunWeapon = "rhs_weap_tr8";
             backpack = "B_Kitbag_rgr";
             addItemsToBackpack[] = {
-                LIST_6("rhs_GRD40_White"),
-                LIST_2("rhs_GRD40_Red"),
-                LIST_2("rhs_GRD40_Green"),
+                LIST_6("rhs_mag_m714_White"),
+                LIST_2("rhs_mag_m713_Red"),
+                LIST_2("rhs_mag_m715_Green"),
                 LIST_1("grad_axe")
             };
         };
@@ -109,11 +109,10 @@ class germany {
             backpack = "B_Kitbag_rgr";
             addItemsToVest[] = {
                 LIST_2("150Rnd_762x51_Box_Tracer"),
-                LIST_2("rhs_mag_rgd5"),
                 LIST_1("rhs_mag_rdg2_white"),
             };
             addItemsToBackpack[] = {
-                LIST_4("150Rnd_762x51_Box_Tracer")
+                LIST_3("150Rnd_762x51_Box_Tracer")
             };
         };
 
