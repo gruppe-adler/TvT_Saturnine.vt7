@@ -43,7 +43,6 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"rhs_c_zil131",
 	"CUP_Misc3_Config",
-	"Desert",
 	"CUP_Misc_e_Config"
 };
 class AddonsMetaData
@@ -148,8 +147,8 @@ class AddonsMetaData
 		};
 		class Item14
 		{
-			className="Desert";
-			name="Desert";
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
 		};
 		class Item15
 		{
