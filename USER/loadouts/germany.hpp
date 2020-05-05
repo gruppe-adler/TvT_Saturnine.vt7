@@ -2,7 +2,7 @@ class germany {
    class AllUnits {
         uniform = "rhsgref_uniform_olive";
         backpack = "";
-        vest[] = {"LOP_V_Carrier_OLV"};
+        vest[] = {"rhs_6b5"};
         primaryWeapon[] = {"rhs_weap_g36c"};
         primaryWeaponMagazine = "rhssaf_30rnd_556x45_SOST_G36";
         primaryWeaponMuzzle = "";

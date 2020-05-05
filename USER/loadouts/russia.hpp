@@ -2,7 +2,7 @@ class russia {
     class AllUnits {
         uniform = "rhs_uniform_flora_patchless_alt";
         backpack = "";
-        vest[] = {"rhs_6b13_Flora_6sh92"};
+        vest[] = {"rhs_6b23_6sh92"};
         primaryWeapon[] = {"rhs_weap_ak74m"};
         primaryWeaponMagazine = "rhs_30Rnd_545x39_7N22_plum_AK";
         primaryWeaponMuzzle = "";
