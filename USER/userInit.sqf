@@ -3,7 +3,7 @@
 */
 
 [{
-    _firstActiveSectorID = 3;
+    _firstActiveSectorID = 2;
     _roundLength = 2100;
     _opforDirection = -1;
 

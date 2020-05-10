@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=254;
+		nextID=260;
 	};
 	class Camera
 	{
-		pos[]={3787.1736,83.887695,6901.0151};
-		dir[]={-0.78227681,-0.55123723,0.29016808};
-		up[]={-0.51683009,0.83434522,0.19170667};
-		aside[]={0.34777677,-1.3361569e-007,0.93758512};
+		pos[]={2430.4204,63.930714,7066.2744};
+		dir[]={-0.85663599,-0.50492251,0.10602261};
+		up[]={-0.50110167,0.86316061,0.062019296};
+		aside[]={0.12282903,-1.8656283e-007,0.99243218};
 	};
 };
 binarizationWanted=0;
@@ -43,6 +43,7 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"rhs_c_zil131",
 	"CUP_Misc3_Config",
+	"Desert",
 	"CUP_Misc_e_Config"
 };
 class AddonsMetaData
@@ -147,8 +148,8 @@ class AddonsMetaData
 		};
 		class Item14
 		{
-			className="CUP_Misc3_Config";
-			name="CUP_Misc3_Config";
+			className="Desert";
+			name="Desert";
 		};
 		class Item15
 		{
@@ -23950,10 +23951,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3785.9675,9.5751095,7035.4507};
-				angles[]={0.054553483,0,0.065888278};
+				position[]={3785.968,9.5751162,7035.4512};
+				angles[]={0.054558992,0,0.065886177};
 			};
-			init="call{[this,""Järvenkylä I"",WEST,3] call grad_linearsd_fnc_createSector;}";
+			init="call{[this,""Järvenkylä I"",EAST,3] call grad_linearsd_fnc_createSector;}";
 			id=2579;
 			type="Logic";
 		};
@@ -23974,12 +23975,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3775.1138,29.366661,7035.4507};
+				position[]={3775.114,29.366688,7035.4512};
 			};
-			init="call{[this,""Järvenkylä II"",WEST,3] call grad_linearsd_fnc_createSector;}";
+			init="call{[this,""Järvenkylä II"",EAST,3] call grad_linearsd_fnc_createSector;}";
 			id=2581;
 			type="Logic";
-			atlOffset=19.789955;
+			atlOffset=19.790001;
 		};
 		class Item65
 		{
@@ -24038,13 +24039,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3599.407,32.453583,7023.6572};
-				angles[]={0,0.094385624,0};
+				position[]={3599.407,32.453724,7023.6572};
+				angles[]={0,0.094387405,0};
 			};
 			init="call{[this,EAST,""ATTACK"", {[_this select 0] execVM 'USER\addSmokeMagazine.sqf';}] call grad_linearsd_fnc_addVehicles;}";
 			id=2586;
 			type="Logic";
-			atlOffset=24.353859;
+			atlOffset=24.354;
 		};
 		class Item70
 		{
@@ -25337,7 +25338,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9520.0254,20.860001,10894.402};
-			angle=3.9445479;
+			angle=3.9445472;
 			class Attributes
 			{
 				sizeA=30;
@@ -25659,7 +25660,7 @@ class Mission
 		class Item130
 		{
 			dataType="Marker";
-			position[]={4510.6772,48.149319,8241.9023};
+			position[]={2786.177,35.575195,7541.4956};
 			name="marker_3";
 			markerType="RECTANGLE";
 			type="rectangle";
@@ -25669,6 +25670,7 @@ class Mission
 			b=50;
 			angle=248.08888;
 			id=2674;
+			atlOffset=-5.4965439;
 		};
 		class Item131
 		{
